@@ -379,7 +379,7 @@ def make_data_module(tokenizer: transformers.PreTrainedTokenizer, args) -> Dict:
         if dataset_name == 'alpaca':
             return load_dataset("tatsu-lab/alpaca")
         elif dataset_name == 'alpaca-clean':
-            return load_dataset("yahma/alpaca-cleaned")
+            return load_dataset("iamshnoo/alpaca-cleaned-bengali")
         elif dataset_name == 'chip2':
             return load_dataset("laion/OIG", data_files='unified_chip2.jsonl')
         elif dataset_name == 'hh-rlhf':
